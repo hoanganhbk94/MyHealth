@@ -7,21 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD08FB0A209BF17B00FFD6B2 /* MHHealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD08FB09209BF17B00FFD6B2 /* MHHealthKitManager.swift */; };
+		BD08FB0D209BF1F600FFD6B2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD08FB0C209BF1F600FFD6B2 /* Constants.swift */; };
+		BD08FB0F209C149B00FFD6B2 /* MHUserHealthProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD08FB0E209C149B00FFD6B2 /* MHUserHealthProfile.swift */; };
+		BD08FB11209C16C300FFD6B2 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD08FB10209C16C300FFD6B2 /* Common.swift */; };
 		BD38EFD6209B24C100185529 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD38EFD5209B24C100185529 /* AppDelegate.swift */; };
-		BD38EFD8209B24C100185529 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD38EFD7209B24C100185529 /* ViewController.swift */; };
-		BD38EFDB209B24C100185529 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD38EFD9209B24C100185529 /* Main.storyboard */; };
 		BD38EFDD209B24C100185529 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD38EFDC209B24C100185529 /* Assets.xcassets */; };
 		BD38EFE0209B24C100185529 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD38EFDE209B24C100185529 /* LaunchScreen.storyboard */; };
+		BD38EFEB209B26CB00185529 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD38EFEA209B26CB00185529 /* Main.storyboard */; };
+		BD38EFEE209B27B500185529 /* MHHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD38EFED209B27B500185529 /* MHHomeViewController.swift */; };
+		BD38EFF2209B298C00185529 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD38EFF1209B298C00185529 /* TabBar.storyboard */; };
+		BD38EFF5209B2C1500185529 /* Alarm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD38EFF4209B2C1500185529 /* Alarm.storyboard */; };
+		BD38EFFA209B2D4200185529 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = BD38EFF9209B2D4200185529 /* logo.png */; };
+		BD38EFFE209B2EE400185529 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD38EFFD209B2EE400185529 /* HealthKit.framework */; };
+		BDAEFFC0209C1A1F00AA5DFA /* MMHealthKitDef.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAEFFBF209C1A1F00AA5DFA /* MMHealthKitDef.swift */; };
+		BDAEFFC2209C409F00AA5DFA /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAEFFC1209C409F00AA5DFA /* Log.swift */; };
+		BDAEFFC4209C4AB800AA5DFA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAEFFC3209C4AB800AA5DFA /* Extensions.swift */; };
+		BDAEFFC6209C595E00AA5DFA /* MHAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAEFFC5209C595E00AA5DFA /* MHAlarmViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD08FB09209BF17B00FFD6B2 /* MHHealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHHealthKitManager.swift; sourceTree = "<group>"; };
+		BD08FB0C209BF1F600FFD6B2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BD08FB0E209C149B00FFD6B2 /* MHUserHealthProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHUserHealthProfile.swift; sourceTree = "<group>"; };
+		BD08FB10209C16C300FFD6B2 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		BD38EFD2209B24C100185529 /* MyHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD38EFD5209B24C100185529 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BD38EFD7209B24C100185529 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BD38EFDA209B24C100185529 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD38EFDC209B24C100185529 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD38EFDF209B24C100185529 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD38EFE1209B24C100185529 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD38EFEA209B26CB00185529 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BD38EFED209B27B500185529 /* MHHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHHomeViewController.swift; sourceTree = "<group>"; };
+		BD38EFF1209B298C00185529 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		BD38EFF4209B2C1500185529 /* Alarm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Alarm.storyboard; sourceTree = "<group>"; };
+		BD38EFF9209B2D4200185529 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		BD38EFFB209B2EE400185529 /* MyHealth.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyHealth.entitlements; sourceTree = "<group>"; };
+		BD38EFFD209B2EE400185529 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		BDAEFFBF209C1A1F00AA5DFA /* MMHealthKitDef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMHealthKitDef.swift; sourceTree = "<group>"; };
+		BDAEFFC1209C409F00AA5DFA /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		BDAEFFC3209C4AB800AA5DFA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BDAEFFC5209C595E00AA5DFA /* MHAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHAlarmViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +54,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD38EFFE209B2EE400185529 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD08FB07209BF12C00FFD6B2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BD08FB0E209C149B00FFD6B2 /* MHUserHealthProfile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BD08FB08209BF13400FFD6B2 /* Health */ = {
+			isa = PBXGroup;
+			children = (
+				BD08FB09209BF17B00FFD6B2 /* MHHealthKitManager.swift */,
+				BDAEFFBF209C1A1F00AA5DFA /* MMHealthKitDef.swift */,
+			);
+			path = Health;
+			sourceTree = "<group>";
+		};
+		BD08FB0B209BF19C00FFD6B2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BD38EFD5209B24C100185529 /* AppDelegate.swift */,
+				BD08FB0C209BF1F600FFD6B2 /* Constants.swift */,
+				BD08FB10209C16C300FFD6B2 /* Common.swift */,
+				BDAEFFC1209C409F00AA5DFA /* Log.swift */,
+				BDAEFFC3209C4AB800AA5DFA /* Extensions.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		BD38EFC9209B24C100185529 = {
 			isa = PBXGroup;
 			children = (
 				BD38EFD4209B24C100185529 /* MyHealth */,
 				BD38EFD3209B24C100185529 /* Products */,
+				BD38EFFC209B2EE400185529 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +110,77 @@
 		BD38EFD4209B24C100185529 /* MyHealth */ = {
 			isa = PBXGroup;
 			children = (
-				BD38EFD5209B24C100185529 /* AppDelegate.swift */,
-				BD38EFD7209B24C100185529 /* ViewController.swift */,
-				BD38EFD9209B24C100185529 /* Main.storyboard */,
+				BD38EFFB209B2EE400185529 /* MyHealth.entitlements */,
+				BD08FB0B209BF19C00FFD6B2 /* Common */,
+				BD08FB08209BF13400FFD6B2 /* Health */,
+				BD08FB07209BF12C00FFD6B2 /* Models */,
+				BD38EFE7209B264600185529 /* Controllers */,
+				BD38EFEC209B271000185529 /* Resources */,
 				BD38EFDC209B24C100185529 /* Assets.xcassets */,
-				BD38EFDE209B24C100185529 /* LaunchScreen.storyboard */,
-				BD38EFE1209B24C100185529 /* Info.plist */,
 			);
 			path = MyHealth;
+			sourceTree = "<group>";
+		};
+		BD38EFE7209B264600185529 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BD38EFF0209B297E00185529 /* Tabbar */,
+				BD38EFEF209B297200185529 /* Home */,
+				BD38EFF3209B2C0100185529 /* Alarm */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BD38EFEC209B271000185529 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BD38EFF8209B2D3500185529 /* Images */,
+				BD38EFE1209B24C100185529 /* Info.plist */,
+				BD38EFDE209B24C100185529 /* LaunchScreen.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BD38EFEF209B297200185529 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BD38EFEA209B26CB00185529 /* Main.storyboard */,
+				BD38EFED209B27B500185529 /* MHHomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BD38EFF0209B297E00185529 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				BD38EFF1209B298C00185529 /* TabBar.storyboard */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		BD38EFF3209B2C0100185529 /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				BD38EFF4209B2C1500185529 /* Alarm.storyboard */,
+				BDAEFFC5209C595E00AA5DFA /* MHAlarmViewController.swift */,
+			);
+			path = Alarm;
+			sourceTree = "<group>";
+		};
+		BD38EFF8209B2D3500185529 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				BD38EFF9209B2D4200185529 /* logo.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		BD38EFFC209B2EE400185529 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD38EFFD209B2EE400185529 /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +209,7 @@
 		BD38EFCA209B24C100185529 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MH;
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Mai Hoang Anh";
@@ -97,6 +217,11 @@
 					BD38EFD1209B24C100185529 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -123,9 +248,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD38EFF2209B298C00185529 /* TabBar.storyboard in Resources */,
+				BD38EFEB209B26CB00185529 /* Main.storyboard in Resources */,
+				BD38EFFA209B2D4200185529 /* logo.png in Resources */,
 				BD38EFE0209B24C100185529 /* LaunchScreen.storyboard in Resources */,
+				BD38EFF5209B2C1500185529 /* Alarm.storyboard in Resources */,
 				BD38EFDD209B24C100185529 /* Assets.xcassets in Resources */,
-				BD38EFDB209B24C100185529 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,22 +264,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD38EFD8209B24C100185529 /* ViewController.swift in Sources */,
+				BDAEFFC4209C4AB800AA5DFA /* Extensions.swift in Sources */,
+				BDAEFFC6209C595E00AA5DFA /* MHAlarmViewController.swift in Sources */,
+				BD38EFEE209B27B500185529 /* MHHomeViewController.swift in Sources */,
+				BD08FB0A209BF17B00FFD6B2 /* MHHealthKitManager.swift in Sources */,
 				BD38EFD6209B24C100185529 /* AppDelegate.swift in Sources */,
+				BDAEFFC0209C1A1F00AA5DFA /* MMHealthKitDef.swift in Sources */,
+				BD08FB0F209C149B00FFD6B2 /* MHUserHealthProfile.swift in Sources */,
+				BDAEFFC2209C409F00AA5DFA /* Log.swift in Sources */,
+				BD08FB11209C16C300FFD6B2 /* Common.swift in Sources */,
+				BD08FB0D209BF1F600FFD6B2 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BD38EFD9209B24C100185529 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BD38EFDA209B24C100185529 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BD38EFDE209B24C100185529 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -274,10 +402,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyHealth/MyHealth.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9W562J2HLT;
 				INFOPLIST_FILE = MyHealth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = eastgate.example.MyHealth;
+				PRODUCT_BUNDLE_IDENTIFIER = com.egs.MyHealth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -288,10 +419,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyHealth/MyHealth.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9W562J2HLT;
 				INFOPLIST_FILE = MyHealth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = eastgate.example.MyHealth;
+				PRODUCT_BUNDLE_IDENTIFIER = com.egs.MyHealth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

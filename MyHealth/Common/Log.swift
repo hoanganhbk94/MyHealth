@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct MHLog {
+struct Log {
     static func log(with message: String) {
         print(message)
     }

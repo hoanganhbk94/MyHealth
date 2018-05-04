@@ -30,6 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 return
             }
             print("HealthKit Successfully Authorized.")
+            NotificationCenter.default.post(name: .fetchData, object: nil)
         }
     }
 

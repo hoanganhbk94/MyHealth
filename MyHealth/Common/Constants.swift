@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+enum HealthkitSetupError: Error {
+    case notAvailableOnDevice
+    case dataTypeNotAvailable
+}

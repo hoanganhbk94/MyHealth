@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MHAlarmViewController: UIViewController {
+class MHAlarmViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

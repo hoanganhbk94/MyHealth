@@ -6,4 +6,10 @@
 //  Copyright © 2018 Mai Hoang Anh. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+func openHealthApp() {
+    if let healthAppUrl = URL(string: "x-apple-health://") {
+        UIApplication.shared.open(healthAppUrl)
+    }
+}
