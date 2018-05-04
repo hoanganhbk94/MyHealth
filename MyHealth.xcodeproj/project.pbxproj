@@ -24,6 +24,7 @@
 		BDAEFFC2209C409F00AA5DFA /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAEFFC1209C409F00AA5DFA /* Log.swift */; };
 		BDAEFFC4209C4AB800AA5DFA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAEFFC3209C4AB800AA5DFA /* Extensions.swift */; };
 		BDAEFFC6209C595E00AA5DFA /* MHAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAEFFC5209C595E00AA5DFA /* MHAlarmViewController.swift */; };
+		BDAEFFC9209C64EC00AA5DFA /* MHUserNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAEFFC8209C64EC00AA5DFA /* MHUserNotificationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		BDAEFFC1209C409F00AA5DFA /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		BDAEFFC3209C4AB800AA5DFA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		BDAEFFC5209C595E00AA5DFA /* MHAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHAlarmViewController.swift; sourceTree = "<group>"; };
+		BDAEFFC8209C64EC00AA5DFA /* MHUserNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHUserNotificationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				BD38EFFB209B2EE400185529 /* MyHealth.entitlements */,
 				BD08FB0B209BF19C00FFD6B2 /* Common */,
 				BD08FB08209BF13400FFD6B2 /* Health */,
+				BDAEFFC7209C64C800AA5DFA /* Notification */,
 				BD08FB07209BF12C00FFD6B2 /* Models */,
 				BD38EFE7209B264600185529 /* Controllers */,
 				BD38EFEC209B271000185529 /* Resources */,
@@ -183,6 +186,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BDAEFFC7209C64C800AA5DFA /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				BDAEFFC8209C64EC00AA5DFA /* MHUserNotificationManager.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -220,6 +231,9 @@
 						SystemCapabilities = {
 							com.apple.HealthKit = {
 								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 0;
 							};
 						};
 					};
@@ -268,6 +282,7 @@
 				BDAEFFC6209C595E00AA5DFA /* MHAlarmViewController.swift in Sources */,
 				BD38EFEE209B27B500185529 /* MHHomeViewController.swift in Sources */,
 				BD08FB0A209BF17B00FFD6B2 /* MHHealthKitManager.swift in Sources */,
+				BDAEFFC9209C64EC00AA5DFA /* MHUserNotificationManager.swift in Sources */,
 				BD38EFD6209B24C100185529 /* AppDelegate.swift in Sources */,
 				BDAEFFC0209C1A1F00AA5DFA /* MMHealthKitDef.swift in Sources */,
 				BD08FB0F209C149B00FFD6B2 /* MHUserHealthProfile.swift in Sources */,

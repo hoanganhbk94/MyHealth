@@ -12,8 +12,7 @@ class MHAlarmViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        MHUserNotificationManager.sharedInstance.makeNotification()
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,7 +20,6 @@ class MHAlarmViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 
