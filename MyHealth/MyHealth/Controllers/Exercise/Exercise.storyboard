@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Push up-->
         <scene sceneID="amE-GI-GCk">
             <objects>
                 <tableViewController id="QZe-N9-13b" sceneMemberID="viewController">
@@ -32,7 +32,7 @@
                             <outlet property="delegate" destination="QZe-N9-13b" id="c88-iN-u9R"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="bcy-m9-fJg"/>
+                    <navigationItem key="navigationItem" title="Push up" id="bcy-m9-fJg"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zSW-Yt-VOb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

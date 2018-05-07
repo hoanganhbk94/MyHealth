@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,18 +14,74 @@
         <scene sceneID="cvr-hC-7Ly">
             <objects>
                 <tableViewController id="mqY-FV-zwI" customClass="MHAlarmViewController" customModule="MyHealth" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="JBk-AO-sYr">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="JBk-AO-sYr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="UtA-w4-ksV">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="MHAlarmHeaderTableViewCell" id="UtA-w4-ksV" customClass="MHAlarmHeaderTableViewCell" customModule="MyHealth" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UtA-w4-ksV" id="WXi-eR-DBh">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sN7-Fz-hQV">
+                                            <rect key="frame" x="16" y="11" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sNl-6m-Ex3">
+                                            <rect key="frame" x="310" y="6" width="51" height="31"/>
+                                            <connections>
+                                                <action selector="stateSwitchValueChanged:" destination="UtA-w4-ksV" eventType="valueChanged" id="JLD-yK-Nnn"/>
+                                            </connections>
+                                        </switch>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="sN7-Fz-hQV" firstAttribute="centerY" secondItem="WXi-eR-DBh" secondAttribute="centerY" id="M3T-Su-igd"/>
+                                        <constraint firstItem="sNl-6m-Ex3" firstAttribute="centerY" secondItem="WXi-eR-DBh" secondAttribute="centerY" id="N5L-CU-uAf"/>
+                                        <constraint firstItem="sN7-Fz-hQV" firstAttribute="leading" secondItem="WXi-eR-DBh" secondAttribute="leadingMargin" id="W2k-qY-Lfx"/>
+                                        <constraint firstAttribute="trailing" secondItem="sNl-6m-Ex3" secondAttribute="trailing" constant="16" id="r0C-Ug-6Xw"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="stateSwitch" destination="sNl-6m-Ex3" id="tUb-GO-RTi"/>
+                                    <outlet property="titleLabel" destination="sN7-Fz-hQV" id="tLF-DR-A64"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="MHAlarmContentTableViewCell" id="7Fu-hu-scG" customClass="MHAlarmContentTableViewCell" customModule="MyHealth" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="99.5" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7Fu-hu-scG" id="WzK-jS-cND">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxw-3L-QIO">
+                                            <rect key="frame" x="21" y="11" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peP-7M-USl">
+                                            <rect key="frame" x="317" y="11" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="peP-7M-USl" secondAttribute="trailing" id="3pf-io-L2X"/>
+                                        <constraint firstItem="peP-7M-USl" firstAttribute="centerY" secondItem="WzK-jS-cND" secondAttribute="centerY" id="dnL-l7-QL5"/>
+                                        <constraint firstItem="vxw-3L-QIO" firstAttribute="leading" secondItem="WzK-jS-cND" secondAttribute="leadingMargin" constant="5" id="npB-fp-GQS"/>
+                                        <constraint firstItem="vxw-3L-QIO" firstAttribute="centerY" secondItem="WzK-jS-cND" secondAttribute="centerY" id="qIx-pf-GDm"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="contentLabel" destination="peP-7M-USl" id="dvc-KV-fdf"/>
+                                    <outlet property="titleLabel" destination="vxw-3L-QIO" id="x1F-mK-7DH"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

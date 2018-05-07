@@ -25,6 +25,8 @@
 		BDA3D11120A0345200003BDF /* Library.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA3D10C20A0341F00003BDF /* Library.framework */; };
 		BDA3D11220A0345200003BDF /* Library.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BDA3D10C20A0341F00003BDF /* Library.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BDA3D11920A049B700003BDF /* Exercise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDA3D11820A049B600003BDF /* Exercise.storyboard */; };
+		BDA3D11E20A05CDD00003BDF /* MHAlarmHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA3D11D20A05CDD00003BDF /* MHAlarmHeaderTableViewCell.swift */; };
+		BDA3D12020A05CE900003BDF /* MHAlarmContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA3D11F20A05CE900003BDF /* MHAlarmContentTableViewCell.swift */; };
 		BDAEFFC0209C1A1F00AA5DFA /* MMHealthKitDef.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAEFFBF209C1A1F00AA5DFA /* MMHealthKitDef.swift */; };
 		BDAEFFC2209C409F00AA5DFA /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAEFFC1209C409F00AA5DFA /* Log.swift */; };
 		BDAEFFC4209C4AB800AA5DFA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAEFFC3209C4AB800AA5DFA /* Extensions.swift */; };
@@ -70,6 +72,8 @@
 		BDA3D10C20A0341F00003BDF /* Library.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Library.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDA3D11620A03D8500003BDF /* MyHealth-Prefix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyHealth-Prefix.h"; sourceTree = "<group>"; };
 		BDA3D11820A049B600003BDF /* Exercise.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Exercise.storyboard; sourceTree = "<group>"; };
+		BDA3D11D20A05CDD00003BDF /* MHAlarmHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHAlarmHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		BDA3D11F20A05CE900003BDF /* MHAlarmContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHAlarmContentTableViewCell.swift; sourceTree = "<group>"; };
 		BDAEFFBF209C1A1F00AA5DFA /* MMHealthKitDef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMHealthKitDef.swift; sourceTree = "<group>"; };
 		BDAEFFC1209C409F00AA5DFA /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		BDAEFFC3209C4AB800AA5DFA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -205,6 +209,7 @@
 		BD38EFF3209B2C0100185529 /* Alarm */ = {
 			isa = PBXGroup;
 			children = (
+				BDA3D11A20A05CAE00003BDF /* TableCell */,
 				BD38EFF4209B2C1500185529 /* Alarm.storyboard */,
 				BDAEFFC5209C595E00AA5DFA /* MHAlarmViewController.swift */,
 			);
@@ -243,6 +248,15 @@
 				BDA3D11820A049B600003BDF /* Exercise.storyboard */,
 			);
 			path = Exercise;
+			sourceTree = "<group>";
+		};
+		BDA3D11A20A05CAE00003BDF /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				BDA3D11D20A05CDD00003BDF /* MHAlarmHeaderTableViewCell.swift */,
+				BDA3D11F20A05CE900003BDF /* MHAlarmContentTableViewCell.swift */,
+			);
+			path = TableCell;
 			sourceTree = "<group>";
 		};
 		BDAEFFC7209C64C800AA5DFA /* Notification */ = {
@@ -400,6 +414,7 @@
 				BDAEFFC6209C595E00AA5DFA /* MHAlarmViewController.swift in Sources */,
 				BD38EFEE209B27B500185529 /* MHHomeViewController.swift in Sources */,
 				BD08FB0A209BF17B00FFD6B2 /* MHHealthKitManager.swift in Sources */,
+				BDA3D11E20A05CDD00003BDF /* MHAlarmHeaderTableViewCell.swift in Sources */,
 				BDAEFFC9209C64EC00AA5DFA /* MHUserNotificationManager.swift in Sources */,
 				BD38EFD6209B24C100185529 /* AppDelegate.swift in Sources */,
 				BDAEFFC0209C1A1F00AA5DFA /* MMHealthKitDef.swift in Sources */,
@@ -407,6 +422,7 @@
 				BDA3D10A20A02FA700003BDF /* MHBaseViewController.swift in Sources */,
 				BDAEFFC2209C409F00AA5DFA /* Log.swift in Sources */,
 				BD08FB11209C16C300FFD6B2 /* Common.swift in Sources */,
+				BDA3D12020A05CE900003BDF /* MHAlarmContentTableViewCell.swift in Sources */,
 				BD08FB0D209BF1F600FFD6B2 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
