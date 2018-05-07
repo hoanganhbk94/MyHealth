@@ -24,6 +24,7 @@
 		BDA3D11020A0344100003BDF /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD38EFFD209B2EE400185529 /* HealthKit.framework */; };
 		BDA3D11120A0345200003BDF /* Library.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA3D10C20A0341F00003BDF /* Library.framework */; };
 		BDA3D11220A0345200003BDF /* Library.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BDA3D10C20A0341F00003BDF /* Library.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BDA3D11920A049B700003BDF /* Exercise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDA3D11820A049B600003BDF /* Exercise.storyboard */; };
 		BDAEFFC0209C1A1F00AA5DFA /* MMHealthKitDef.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAEFFBF209C1A1F00AA5DFA /* MMHealthKitDef.swift */; };
 		BDAEFFC2209C409F00AA5DFA /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAEFFC1209C409F00AA5DFA /* Log.swift */; };
 		BDAEFFC4209C4AB800AA5DFA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAEFFC3209C4AB800AA5DFA /* Extensions.swift */; };
@@ -68,6 +69,7 @@
 		BDA3D10920A02FA700003BDF /* MHBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHBaseViewController.swift; sourceTree = "<group>"; };
 		BDA3D10C20A0341F00003BDF /* Library.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Library.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDA3D11620A03D8500003BDF /* MyHealth-Prefix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyHealth-Prefix.h"; sourceTree = "<group>"; };
+		BDA3D11820A049B600003BDF /* Exercise.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Exercise.storyboard; sourceTree = "<group>"; };
 		BDAEFFBF209C1A1F00AA5DFA /* MMHealthKitDef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMHealthKitDef.swift; sourceTree = "<group>"; };
 		BDAEFFC1209C409F00AA5DFA /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		BDAEFFC3209C4AB800AA5DFA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				BD38EFF0209B297E00185529 /* Tabbar */,
 				BD38EFEF209B297200185529 /* Home */,
 				BD38EFF3209B2C0100185529 /* Alarm */,
+				BDA3D11720A0499C00003BDF /* Exercise */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -232,6 +235,14 @@
 				BDA3D10920A02FA700003BDF /* MHBaseViewController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		BDA3D11720A0499C00003BDF /* Exercise */ = {
+			isa = PBXGroup;
+			children = (
+				BDA3D11820A049B600003BDF /* Exercise.storyboard */,
+			);
+			path = Exercise;
 			sourceTree = "<group>";
 		};
 		BDAEFFC7209C64C800AA5DFA /* Notification */ = {
@@ -317,6 +328,7 @@
 				BD38EFF2209B298C00185529 /* TabBar.storyboard in Resources */,
 				BD38EFEB209B26CB00185529 /* Main.storyboard in Resources */,
 				BD38EFFA209B2D4200185529 /* logo.png in Resources */,
+				BDA3D11920A049B700003BDF /* Exercise.storyboard in Resources */,
 				BD38EFE0209B24C100185529 /* LaunchScreen.storyboard in Resources */,
 				BD38EFF5209B2C1500185529 /* Alarm.storyboard in Resources */,
 				BD38EFDD209B24C100185529 /* Assets.xcassets in Resources */,

@@ -271,7 +271,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icon_home" width="24" height="24"/>
+        <image name="icon_home" width="36" height="36"/>
         <image name="icon_person" width="24" height="24"/>
     </resources>
 </document>
