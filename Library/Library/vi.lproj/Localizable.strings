@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  Library
+
+  Created by Duong Le Bac on 11/8/17.
+  Copyright © 2017 Eastgate Software. All rights reserved.
+*/
+
+"title_alert_cancel"        = "Cancel";
+"title_alert_ok"            = "OK";
+
+"msg_error_unknown"         = "Unknow Error";
+"msg_alert_test"            = "Show alert to test localize strings.";

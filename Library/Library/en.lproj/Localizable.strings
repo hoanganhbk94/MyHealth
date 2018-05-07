@@ -1,0 +1,27 @@
+/* 
+ Localizable.strings
+ Library
+ 
+ Created by Duong Le Bac on 11/8/17.
+ Copyright © 2017 Eastgate Software. All rights reserved.
+ */
+
+/****************
+ Defined naming convension of Localizable
+ With Title:
+ * Button: title_btn_{name}
+ * Label: title_lbl_{name}
+ * Alert: title_alert_{name}
+ * TextField: title_tf_{name}
+ * TextView: title_txt_{name}
+ With Message:
+ * Alert: msg_alert_{name}
+ * Label: msg_lbl_{name}
+ * Error: msg_error_{name}
+ ****************/
+"title_alert_cancel"        = "Cancel";
+"title_alert_ok"            = "OK";
+
+"msg_error_unknown"         = "Unknow Error";
+"msg_alert_test"            = "Show alert to test localize strings.";
+"msg_error_network"         = "Network connection failed. Please try again";
