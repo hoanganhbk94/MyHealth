@@ -22,30 +22,36 @@ class MHUserNotificationManager {
         }
     }
     
-    func makeNotification() {
+    func makeCalendarNotification(title: String, message: String, dateComponents: DateComponents) {
         let center =  UNUserNotificationCenter.current()
         
         let content = UNMutableNotificationContent()
-        content.title = "Brother Of King"
-        //content.subtitle = "Lunch"
-        content.body = "Its lunch time at EGS, have a funny lunch time"
+        content.title = title
+        //content.subtitle = "Subtitle"
+        content.body = message
         content.sound = UNNotificationSound.default()
         
-        //notification trigger can be based on time, calendar or location
-        var dateComponents = DateComponents()
-        dateComponents.hour = 11
-        dateComponents.minute = 55
+        /// Notification trigger can be based on time, calendar or location
+        //var dateComponents = DateComponents()
+        //dateComponents.hour = 11
+        //dateComponents.minute = 55
         let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
         
-        //create request to display
+        /// Create request to display
         let request = UNNotificationRequest(identifier: "ContentIdentifier", content: content, trigger: trigger)
         
-        //add request to notification center
+        /// Add request to notification center
         center.add(request) { (error) in
             if error != nil {
                 print("error \(String(describing: error))")
             }
         }
+    }
+    
+    func removeNotification(identifier: String) {
+        let center =  UNUserNotificationCenter.current()
+        center.removeDeliveredNotifications(withIdentifiers: [identifier])
+        center.removePendingNotificationRequests(withIdentifiers: [identifier])
     }
     
 }
